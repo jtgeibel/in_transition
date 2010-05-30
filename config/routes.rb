@@ -1,4 +1,6 @@
 TransitionR3::Application.routes.draw do |map|
+  get "welcome/index"
+
   devise_for :users
 
   # The priority is based upon order of creation:
