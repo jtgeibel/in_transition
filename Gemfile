@@ -26,3 +26,4 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # end
 gem 'devise', '1.1.rc1'
 gem 'haml'
+gem 'rails3-generators'
