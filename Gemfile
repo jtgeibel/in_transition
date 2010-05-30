@@ -24,3 +24,5 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :test do
 #   gem 'webrat'
 # end
+gem 'devise', '1.1.rc1'
+gem 'haml'
