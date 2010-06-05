@@ -25,6 +25,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 #   gem 'webrat'
 # end
 gem 'devise', '1.1.rc1'
-gem 'haml'
 gem 'rails3-generators'
 gem 'simple-navigation'
+gem "haml", ">=3.0.0"
+gem "compass", ">= 0.10.0"
