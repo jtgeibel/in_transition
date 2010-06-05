@@ -10,8 +10,16 @@
     = stylesheet_link_tag 'compiled/print.css', :media => 'print'
     /[if lt IE 8]
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
-  %body
-    = render_navigation
-    %p.notice= notice
-    %p.alert= alert
-    = yield
+  %body.two-col.bp
+    #container
+      #header
+        %h1 TransitionPGH
+        = render_navigation
+      #sidebar Side Bar!
+      #content
+        -if notice
+          %p.notice= notice
+        -if alert
+          %p.alert= alert
+        = yield
+      #footer Footer!
