@@ -31,9 +31,9 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :home, 'Home', root_url
 
     # Add an item which has a sub navigation (same params, but with block)
-    primary.item :initiatives, 'Initiatives', root_url do |sub_nav|
-      sub_nav.item :key_2_1, 'test', root_url
-      sub_nav.item :key_2_2, 'test2', root_url
+    primary.item :initiatives, 'Initiatives', initiatives_url do |sub_nav|
+      sub_nav.item :key_2_1, 'test', initiative_url(1)
+      sub_nav.item :key_2_2, 'test2', initiative_url(2)
     end 
   
     # You can also specify a condition-proc that needs to be fullfilled to display an item.

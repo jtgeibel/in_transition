@@ -1,0 +1,10 @@
+%p
+  %b Name:
+  = @initiative.name
+%p
+  %b Location:
+  = @initiative.location
+
+= link_to 'Edit', edit_initiative_path(@initiative)
+\|
+= link_to 'Back', initiatives_path

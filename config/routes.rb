@@ -1,4 +1,6 @@
 TransitionR3::Application.routes.draw do |map|
+  resources :initiatives
+
   get "welcome/index"
 
   devise_for :users

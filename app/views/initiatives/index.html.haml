@@ -1,0 +1,21 @@
+%h1 Listing initiatives
+
+%table
+  %tr
+    %th Name
+    %th Location
+    %th
+    %th
+    %th
+
+  - @initiatives.each do |initiative|
+    %tr
+      %td= initiative.name
+      %td= initiative.location
+      %td= link_to 'Show', initiative
+      %td= link_to 'Edit', edit_initiative_path(initiative)
+      %td= link_to 'Destroy', initiative, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New initiative', new_initiative_path
