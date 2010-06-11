@@ -30,3 +30,5 @@ gem 'rails3-generators'
 gem 'simple-navigation'
 gem "haml", "=3.0.10"
 gem "compass", ">= 0.10.0"
+
+gem 'hassle', :git => 'git://github.com/koppen/hassle.git'
