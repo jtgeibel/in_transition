@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0.beta3'
+gem 'rails', :git => 'git://github.com/rails/rails.git', :ref => '5c9f27abaabba0d008cc' 
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
