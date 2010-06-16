@@ -31,4 +31,4 @@ gem 'simple-navigation'
 gem "haml"
 gem "compass", ">= 0.10.0"
 
-gem 'hassle', :git => 'git://github.com/koppen/hassle.git'
+gem 'hassle', :git => 'git://github.com/DohMoose/hassle.git'

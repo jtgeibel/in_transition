@@ -1,10 +1,10 @@
 --- 
-hash: 013c4e3d5c572aca3ee769a2d6183f7c609f4668
+hash: 67e62b197fd132a0039477a5592bd0e7e7962dde
 sources: 
 - Git: 
-    git: git://github.com/koppen/hassle.git
-    uri: git://github.com/koppen/hassle.git
-    ref: 58d670a7319c7067dc99fe16b5b3ee1e28fa2e71
+    git: git://github.com/DohMoose/hassle.git
+    uri: git://github.com/DohMoose/hassle.git
+    ref: 5f4301ee0db2f71c5cc2afc4e8efb8db2708bd5e
 - Rubygems: 
     uri: http://rubygems.org
 specs: 
