@@ -28,7 +28,7 @@ gem "pg", :group => :production
 gem 'devise', '1.1.rc1'
 gem 'rails3-generators'
 gem 'simple-navigation'
-gem "haml", "=3.0.10"
+gem "haml"
 gem "compass", ">= 0.10.0"
 
 gem 'hassle', :git => 'git://github.com/koppen/hassle.git'
