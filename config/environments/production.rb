@@ -39,4 +39,6 @@ TransitionR3::Application.configure do
 
   # Enable threaded mode
   # config.threadsafe!
+
+  Sass::Plugin.options[:template_location] = { 'app/stylesheets' => 'public/stylesheets' }
 end
