@@ -41,4 +41,6 @@ TransitionR3::Application.configure do
   # config.threadsafe!
 
   Sass::Plugin.options[:template_location] = { 'app/stylesheets' => 'public/stylesheets' }
+
+  config.action_mailer.default_url_options = { :host => 'warm-night-84.heroku.com' }
 end
