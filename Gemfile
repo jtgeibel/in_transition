@@ -32,3 +32,8 @@ gem "haml"
 gem "compass", ">= 0.10.0"
 
 gem 'hassle', :git => 'git://github.com/DohMoose/hassle.git'
+gem 'declarative_authorization', :git => 'git://github.com/stffn/declarative_authorization.git'
+
+group :development do
+  gem 'ruby_parser'
+end

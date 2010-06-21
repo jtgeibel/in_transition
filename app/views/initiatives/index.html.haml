@@ -18,4 +18,5 @@
 
 %br
 
-= link_to 'New initiative', new_initiative_path
+- permitted_to? :create do
+  = link_to 'New initiative', new_initiative_path
