@@ -1,4 +1,6 @@
 TransitionR3::Application.routes.draw do |map|
+  resources :focus_areas
+
   resources :initiatives
 
   get "welcome/index"
