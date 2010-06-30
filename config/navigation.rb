@@ -32,9 +32,11 @@ SimpleNavigation::Configuration.run do |navigation|
 
     # Add an item which has a sub navigation (same params, but with block)
     primary.item :initiatives, 'Initiatives', initiatives_url do |sub_nav|
-      sub_nav.item :key_2_1, 'test', initiative_url(1)
-      sub_nav.item :key_2_2, 'test2', initiative_url(2)
+      sub_nav.item :pge, 'Pittsburgh Garden Experiment', initiative_url('pittsburgh-garden-experiment')
+      sub_nav.item :test2, 'test2', initiative_url('test2')
     end 
+    
+    primary.item :focus_areas, 'Focus Areas', focus_areas_url
   
     # You can also specify a condition-proc that needs to be fullfilled to display an item.
     # Conditions are part of the options. They are evaluated in the context of the views,

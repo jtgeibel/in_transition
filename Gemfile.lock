@@ -73,6 +73,8 @@ specs:
     version: 0.10.7
 - devise: 
     version: 1.1.rc2
+- friendly_id: 
+    version: 3.0.6
 - hassle: 
     version: 0.0.1
     source: 1
@@ -135,3 +137,7 @@ dependencies:
     version: ">= 0"
     group: 
     - :development
+  friendly_id: 
+    version: ">= 0"
+    group: 
+    - :default
