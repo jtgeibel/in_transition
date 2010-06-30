@@ -1,5 +1,5 @@
 --- 
-hash: 5217cf1cc7f2024d417f2aa406f8a243388ab032
+hash: 267dea2a85bdaf34ecbb54b8e4411e81da78c6f9
 sources: 
 - Git: 
     git: git://github.com/stffn/declarative_authorization.git
@@ -25,11 +25,11 @@ specs:
 - activemodel: 
     version: 3.0.0.beta4
 - erubis: 
-    version: 2.6.5
+    version: 2.6.6
 - rack: 
     version: 1.1.0
 - rack-mount: 
-    version: 0.6.4
+    version: 0.6.6
 - rack-test: 
     version: 0.5.4
 - tzinfo: 
@@ -52,14 +52,16 @@ specs:
     version: 3.0.0.beta4
 - activeresource: 
     version: 3.0.0.beta4
+- bcrypt-ruby: 
+    version: 2.1.2
 - bundler: 
     version: 0.9.26
 - haml: 
-    version: 3.0.12
+    version: 3.0.13
 - compass: 
     version: 0.10.2
 - thor: 
-    version: 0.13.6
+    version: 0.13.7
 - railties: 
     version: 3.0.0.beta4
 - rails: 
@@ -70,14 +72,14 @@ specs:
 - warden: 
     version: 0.10.7
 - devise: 
-    version: 1.1.rc1
+    version: 1.1.rc2
 - hassle: 
     version: 0.0.1
     source: 1
 - pg: 
     version: 0.9.0
 - rails3-generators: 
-    version: 0.9.1
+    version: 0.9.2
 - sexp_processor: 
     version: 3.0.4
 - ruby_parser: 
@@ -102,7 +104,7 @@ dependencies:
     group: 
     - :production
   devise: 
-    version: = 1.1.rc1
+    version: = 1.1.rc2
     group: 
     - :default
   rails3-generators: 

@@ -25,7 +25,7 @@ gem "pg", :group => :production
 # group :test do
 #   gem 'webrat'
 # end
-gem 'devise', '1.1.rc1'
+gem 'devise', '1.1.rc2'
 gem 'rails3-generators'
 gem 'simple-navigation'
 gem "haml"
