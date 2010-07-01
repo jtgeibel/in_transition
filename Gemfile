@@ -36,6 +36,7 @@ gem 'declarative_authorization', :git => 'git://github.com/stffn/declarative_aut
 
 group :development do
   gem 'ruby_parser'
+  gem 'inherited_resources'
 end
 
 gem 'friendly_id'
