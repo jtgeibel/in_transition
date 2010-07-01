@@ -1,9 +1,7 @@
 TransitionR3::Application.routes.draw do |map|
-  resources :focus_areas
+  resources :focus_areas, :only => [:index, :show]
 
   resources :initiatives
-
-  get "welcome/index"
 
   devise_for :users
 
