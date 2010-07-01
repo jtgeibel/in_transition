@@ -6,13 +6,11 @@
     %th Location
     %th
     %th
-    %th
 
   - @initiatives.each do |initiative|
     %tr
-      %td= initiative.name
+      %td= link_to initiative.name, initiative
       %td= initiative.location
-      %td= link_to 'Show', initiative
       %td= link_to 'Edit', edit_initiative_path(initiative)
       %td= link_to 'Destroy', initiative, :confirm => 'Are you sure?', :method => :delete
 
