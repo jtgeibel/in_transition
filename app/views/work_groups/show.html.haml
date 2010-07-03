@@ -1,0 +1,17 @@
+%p
+  %b Name:
+  = @work_group.name
+%p
+  %b Description:
+  = @work_group.description
+%p
+  %b Initiative:
+  = @work_group.initiative.name
+
+%p
+  %b Focus:
+  = @work_group.focus_area.name
+
+= link_to 'Edit', edit_resource_path
+\|
+= link_to 'Back', collection_path

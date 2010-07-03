@@ -1,2 +1,3 @@
 %h1= @focus_area.name
-%p List of initiatives goes here...
+- @focus_area.work_groups.each do |group|
+  = link_to "#{group.initiative.name}: #{group.name}", group

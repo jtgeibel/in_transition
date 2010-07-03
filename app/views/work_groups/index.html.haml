@@ -1,0 +1,23 @@
+%h1 Listing all working groups
+
+%table
+  %tr
+    %th Name
+    %th Description
+    %th Initiative
+    %th Focus
+    %th
+    %th
+
+  - @work_groups.each do |work_group|
+    %tr
+      %td= link_to work_group.name, work_group
+      %td= work_group.description
+      %td= work_group.initiative.name
+      %td= work_group.focus_area.name
+      %td= link_to 'Edit', edit_work_group_path(work_group)
+      /%td= link_to 'Destroy', work_group, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New work_group', new_work_group_path

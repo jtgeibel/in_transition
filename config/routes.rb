@@ -1,4 +1,6 @@
 TransitionR3::Application.routes.draw do |map|
+  resources :work_groups
+
   resources :focus_areas, :only => [:index, :show]
 
   resources :initiatives
