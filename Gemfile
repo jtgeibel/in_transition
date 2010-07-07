@@ -6,7 +6,10 @@ gem 'rails', '3.0.0.beta4'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3', :group => :development
-gem "pg", :group => :production
+group :production do
+  gem "pg"
+  gem 'hassle', :git => 'git://github.com/DohMoose/hassle.git'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -31,7 +34,6 @@ gem 'simple-navigation'
 gem "haml"
 gem "compass", ">= 0.10.0"
 
-gem 'hassle', :git => 'git://github.com/DohMoose/hassle.git'
 gem 'declarative_authorization', :git => 'git://github.com/stffn/declarative_authorization.git'
 
 group :development do

@@ -14,11 +14,22 @@
       #header
         %h1 TransitionPGH
         = render_navigation
-      #sidebar Side Bar!
+      #sidebar
+        - if content_for? :sidebar
+          = yield :sidebar
+        - else
+          -# .box
+          %h1 Sidebar
+          (empty)
       #content
         -if notice
           %p.notice= notice
         -if alert
           %p.error= alert
         = yield
-      #footer Footer!
+      #footer
+        =link_to "Home", root_url
+        |
+        =link_to "Sign up", new_user_registration_path
+        |
+        =link_to "Source Code", "http://github.com/jtgeibel/in_transition"
