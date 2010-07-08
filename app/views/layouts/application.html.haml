@@ -13,7 +13,8 @@
     #container
       #header
         %h1 TransitionPGH
-        = render_navigation
+        = render_navigation :level=>1
+        = render_navigation :level=>2
       #sidebar
         - if content_for? :sidebar
           = yield :sidebar
@@ -30,6 +31,6 @@
       #footer
         =link_to "Home", root_url
         |
-        =link_to "Sign up", new_user_registration_path
+        =link_to "Register (demo)", new_user_registration_path
         |
         =link_to "Source Code", "http://github.com/jtgeibel/in_transition"

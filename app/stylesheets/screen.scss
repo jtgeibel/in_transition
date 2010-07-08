@@ -51,3 +51,29 @@ body.two-col {
 #sidebar h1 {
   font-size: 1.5em;
 }
+
+#header {
+  margin-bottom: 5px;
+}
+
+#header ul {
+  padding-left: 25px;
+  clear: both;
+  font-size: 140%;
+
+  a {
+  text-decoration: none;
+  }
+  
+  a.selected {
+    font-weight: bold;
+  }
+  
+  li {
+    border: medium none;
+    list-style-image: none;
+    list-style-type: none;
+    padding: 0 12px 5px 12px;
+    float: left;
+  }
+}
