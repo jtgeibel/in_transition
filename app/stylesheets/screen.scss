@@ -33,10 +33,13 @@ form {
   
 form label {
   display: block; }
-  
+
+form .field_with_errors {
+  display: inline;
+}
+
 form span.error {
-  margin-top: 1em;
-  display: block;
+  float: right;
 }
 
 // Page layout can be done using mixins applied to your semantic classes and IDs:
