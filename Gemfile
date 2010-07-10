@@ -42,3 +42,4 @@ group :development do
 end
 
 gem 'friendly_id'
+gem 'simple_form'

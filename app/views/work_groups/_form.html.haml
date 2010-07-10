@@ -1,22 +1,9 @@
-= form_for @work_group do |f|
+= simple_form_for @work_group do |f|
   -if @work_group.errors.any?
-    #errorExplanation
-      %h2= "#{pluralize(@work_group.errors.count, "error")} prohibited this work_group from being saved:"
-      %ul
-        - @work_group.errors.full_messages.each do |msg|
-          %li= msg
-
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :description
-    = f.text_field :description
-  .field
-    = f.label :initiative
-    = f.text_field :initiative
-  .field
-    = f.label :focus_area
-    = f.text_field :focus_area
-  .actions
-    = f.submit 'Save'
+    #errorExplanation.error
+      = "#{pluralize(@work_group.errors.count, "error")} prohibited this work_group from being saved."
+  = f.input :name
+  = f.input :description, :as => :text
+  = f.association :initiative
+  = f.association :focus_area
+  = f.button :submit

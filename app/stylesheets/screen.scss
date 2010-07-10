@@ -28,8 +28,16 @@ body.bp {
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
 }
 
-form.bp {
+form {
   @include blueprint-form; }
+  
+form label {
+  display: block; }
+  
+form span.error {
+  margin-top: 1em;
+  display: block;
+}
 
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body {
