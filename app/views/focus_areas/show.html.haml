@@ -1,3 +1,15 @@
 %h1= @focus_area.name
-- @focus_area.work_groups.each do |group|
-  = link_to "#{group.initiative.name}: #{group.name}", group
+.box
+  %h2 Work Groups
+  - @focus_area.work_groups.each do |group|
+    = link_to "#{group.initiative.name}: #{group.name}", group
+.box
+  %h2 Resources
+  (coming soon)
+.box
+  %h2 People
+  (coming soon)
+- content_for :sidebar do
+  .box
+    %h1 Featured
+    (none here yet)

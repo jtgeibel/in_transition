@@ -15,6 +15,12 @@
         %h1 TransitionPGH
         = render_navigation :level=>1
         = render_navigation :level=>2
+      #content
+        -if notice
+          %p.notice= notice
+        -if alert
+          %p.error= alert
+        = yield
       #sidebar
         - if content_for? :sidebar
           = yield :sidebar
@@ -22,12 +28,6 @@
           -# .box
           %h1 Sidebar
           (empty)
-      #content
-        -if notice
-          %p.notice= notice
-        -if alert
-          %p.error= alert
-        = yield
       #footer
         =link_to "Home", root_url
         |

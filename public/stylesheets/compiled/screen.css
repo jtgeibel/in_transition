@@ -522,7 +522,7 @@ body #container {
 body #header, body #footer {
   display: inline;
   float: left;
-  margin-right: 10px;
+  margin-right: 0;
   width: 950px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
@@ -534,7 +534,7 @@ body #header, body #footer {
 body.two-col #sidebar {
   display: inline;
   float: left;
-  margin-right: 10px;
+  margin-right: 0;
   width: 310px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
@@ -545,7 +545,7 @@ body.two-col #sidebar {
 body.two-col #content {
   display: inline;
   float: left;
-  margin-right: 0;
+  margin-right: 10px;
   width: 630px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
@@ -557,7 +557,7 @@ body.two-col #content {
 body.one-col #content {
   display: inline;
   float: left;
-  margin-right: 10px;
+  margin-right: 0;
   width: 950px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
@@ -596,4 +596,9 @@ body.one-col #content {
   list-style-type: none;
   padding: 0 12px 5px 12px;
   float: left;
+}
+
+/* line 87, ../../../app/stylesheets/screen.scss */
+#sidebar .box {
+  background: beige;
 }
