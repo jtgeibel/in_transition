@@ -31,8 +31,11 @@ body.bp {
 form {
   @include blueprint-form; }
   
-form label {
+form label, form input {
   display: block; }
+form input[type="checkbox"] {
+  float: left;
+  top: 0;}
 
 form .field_with_errors {
   display: inline;
@@ -40,6 +43,10 @@ form .field_with_errors {
 
 form span.error {
   float: right;
+}
+
+#error_explanation {
+  @include error;
 }
 
 // Page layout can be done using mixins applied to your semantic classes and IDs:
