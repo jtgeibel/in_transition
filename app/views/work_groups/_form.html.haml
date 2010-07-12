@@ -2,8 +2,10 @@
   -if @work_group.errors.any?
     #errorExplanation.error
       = "#{pluralize(@work_group.errors.count, "error")} prohibited this work_group from being saved."
-  = f.input :name
-  = f.input :description, :as => :text
-  = f.association :initiative
-  = f.association :focus_area
-  = f.button :submit
+  .inputs
+    = f.input :name
+    = f.input :description, :as => :text
+    = f.association :initiative
+    = f.association :focus_area
+  .actions
+    = f.button :submit

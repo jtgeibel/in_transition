@@ -31,8 +31,9 @@ body.bp {
 form {
   @include blueprint-form; }
   
-form label, form input {
+form label {
   display: block; }
+
 form input[type="checkbox"] {
   float: left;
   top: 0;}
@@ -43,6 +44,10 @@ form .field_with_errors {
 
 form span.error {
   float: right;
+}
+
+form .inputs {
+  margin: 0 0 1em;
 }
 
 #error_explanation {
