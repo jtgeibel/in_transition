@@ -37,8 +37,11 @@ SimpleNavigation::Configuration.run do |navigation|
       sub_nav.item :featured3, 'featured_link_3', initiative_url('test3')
     end 
     
-    primary.item :focus_areas, 'Focus Areas', focus_areas_url
+    primary.item :focus_areas, 'Focus Areas', focus_areas_url do |sub_nav|
+      sub_nav.item :focus_area_food, 'Food', focus_area_url(:food)
+    end
     primary.item :work_groups, 'Work Groups', work_groups_url
+    primary.item :resources, 'Resources', resources_url
   
     # You can also specify a condition-proc that needs to be fullfilled to display an item.
     # Conditions are part of the options. They are evaluated in the context of the views,
