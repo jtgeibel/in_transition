@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100703043205) do
+ActiveRecord::Schema.define(:version => 20100712040125) do
 
   create_table "focus_areas", :force => true do |t|
     t.string   "name"
@@ -29,6 +29,15 @@ ActiveRecord::Schema.define(:version => 20100703043205) do
   end
 
   add_index "initiatives", ["cached_slug"], :name => "index_initiatives_on_cached_slug"
+
+  create_table "resources", :force => true do |t|
+    t.string   "title"
+    t.integer  "focus_area_id"
+    t.string   "description"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "slugs", :force => true do |t|
     t.string   "name"

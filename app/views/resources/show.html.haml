@@ -1,0 +1,16 @@
+%p
+  %b Title:
+  = @resource.title
+%p
+  %b Focus area:
+  = @resource.focus_area.name
+%p
+  %b Description:
+  = @resource.description
+%p
+  %b Url:
+  = link_to @resource.url, @resource.url
+
+= link_to 'Edit', edit_resource_path(@resource)
+\|
+= link_to 'Back', resources_path

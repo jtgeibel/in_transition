@@ -1,0 +1,13 @@
+%h1 Listing resources
+-content_for :sidebar do
+  = link_to 'New resource', new_resource_path
+
+- @resources.each do |resource|
+  .box
+    %h2.title= link_to resource.title, resource
+    .focus_area= link_to resource.focus_area.name, focus_area_url(resource.focus_area)
+    .description= resource.description
+    = link_to resource.url, resource.url
+    %p
+      =link_to 'Edit', edit_resource_path(resource)
+      =link_to 'Destroy', resource, :confirm => 'Are you sure?', :method => :delete

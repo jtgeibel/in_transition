@@ -110,3 +110,11 @@ body.one-col {
 #sidebar .box {
   background: beige;
 }
+
+.box h2.title {
+  margin-bottom: 0;
+}
+
+.box h2.title a {
+  text-decoration: none;
+}

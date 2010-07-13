@@ -1,0 +1,11 @@
+= simple_form_for @resource do |f|
+  -if @resource.errors.any?
+    #errorExplanation.error
+      = "#{pluralize(@resource.errors.count, "error")} prohibited this resource from being saved."
+  .inputs
+    = f.input :title
+    = f.association :focus_area
+    = f.input :description, :as => :text
+    = f.input :url
+  .actions
+    = f.button :submit
