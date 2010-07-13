@@ -1,6 +1,3 @@
-class WelcomeController < ApplicationController
+class WelcomeController < ApplicationController # Not using InheritedResources::Base because there isn't a database model for this controller.
   layout 'no_sidebar'
-
-  def index # Don't want to use the the action from inherited_resource
-  end
 end

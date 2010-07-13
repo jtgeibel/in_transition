@@ -1,3 +1,3 @@
-class WorkGroupsController < ApplicationController
+class WorkGroupsController < InheritedResources::Base
   navigation :work_groups
 end
