@@ -6,7 +6,7 @@ TransitionR3::Application.configure do
   config.cache_classes = true
 
   # Full error reports are disabled and caching is turned on
-  config.consider_all_requests_local       = true
+  config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
   # Specifies the header that your server uses for sending files
@@ -40,7 +40,7 @@ TransitionR3::Application.configure do
   # Enable threaded mode
   # config.threadsafe!
 
-  Sass::Plugin.options[:template_location] = { 'app/stylesheets' => 'public/stylesheets' }
+  Sass::Plugin.options[:template_location] = { 'app/stylesheets' => 'public/stylesheets/compiled' }
   Sass::Plugin.options[:debug_info] = true
 
   config.action_mailer.default_url_options = { :host => 'warm-night-84.heroku.com' }
