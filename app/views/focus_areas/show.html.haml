@@ -5,7 +5,8 @@
     = link_to "#{group.initiative.name}: #{group.name}", group
 .box
   %h2 Resources
-  (coming soon)
+  -@focus_area.resources.each do |resource|
+    = link_to resource.title, resource
 .box
   %h2 People
   (coming soon)
