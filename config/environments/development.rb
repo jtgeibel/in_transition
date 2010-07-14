@@ -18,6 +18,6 @@ TransitionR3::Application.configure do
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
-  Sass::Plugin.options[:template_location] = { 'app/stylesheets' => 'public/stylesheets/compiled' }
+  Sass::Plugin.options[:template_location] = 'app/stylesheets'
   Sass::Plugin.options[:debug_info] = true
 end

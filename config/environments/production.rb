@@ -40,7 +40,7 @@ TransitionR3::Application.configure do
   # Enable threaded mode
   # config.threadsafe!
 
-  Sass::Plugin.options[:template_location] = { 'app/stylesheets' => 'public/stylesheets/compiled' }
+  Sass::Plugin.options[:template_location] = 'app/stylesheets'
   Sass::Plugin.options[:debug_info] = true
 
   config.action_mailer.default_url_options = { :host => 'warm-night-84.heroku.com' }

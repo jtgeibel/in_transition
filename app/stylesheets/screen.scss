@@ -46,7 +46,7 @@ form span.error {
   float: right;
 }
 
-form .inputs {
+form .inputs, form .actions {
   margin: 0 0 1em;
 }
 
@@ -59,7 +59,9 @@ body {
   #container {
     @include container; }
   #header, #footer {
-    @include column($blueprint-grid-columns, true); } }
+    @include column($blueprint-grid-columns, true); }
+  #footer {
+    margin-top: 15px; } }
 
 body.two-col {
   #sidebar {
