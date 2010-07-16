@@ -1,4 +1,4 @@
-TransitionR3::Application.routes.draw do |map|
+InTransition::Application.routes.draw do |map|
   resources :resources
 
   resources :work_groups
