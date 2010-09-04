@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0.beta4'
+gem 'rails', '~>3.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -28,7 +28,7 @@ end
 # group :test do
 #   gem 'webrat'
 # end
-gem 'devise', '1.1.rc2'
+gem 'devise', '~>1.1.0'
 gem 'rails3-generators'
 gem 'simple-navigation'
 gem "haml"
