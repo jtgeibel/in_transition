@@ -30,7 +30,7 @@ end
 # end
 gem 'devise', '~>1.1.0'
 gem 'rails3-generators'
-gem 'simple-navigation'
+gem 'simple-navigation', '3.0.0.beta2'
 gem "haml"
 gem "compass", ">= 0.10.0"
 
