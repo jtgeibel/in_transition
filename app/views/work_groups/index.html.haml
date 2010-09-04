@@ -1,23 +1,16 @@
-%h1 Listing all working groups
+%h1 Active Working Groups
+- content_for :sidebar do
+  = link_to 'New working group', new_work_group_path if permitted_to? :create
 
-%table
-  %tr
-    %th Name
-    %th Description
-    %th Initiative
-    %th Focus
-    %th
-    %th
-
-  - @work_groups.each do |work_group|
-    %tr
-      %td= link_to work_group.name, work_group
-      %td= work_group.description
-      %td= work_group.initiative.name
-      %td= work_group.focus_area.name
-      %td= link_to 'Edit', edit_work_group_path(work_group)
-      /%td= link_to 'Destroy', work_group, :confirm => 'Are you sure?', :method => :delete
-
-%br
-
-= link_to 'New work_group', new_work_group_path
+- @work_groups.each do |wg|
+  .box
+    %h2.title
+      = link_to wg.initiative.name, initiative_url(wg.initiative)
+      \:
+      = link_to wg.name, wg
+    .focus_area= link_to wg.focus_area.name, focus_area_url(wg.focus_area)
+    .description= wg.description
+    - permitted_to? :create do
+      %p
+        =link_to 'Edit', edit_work_group_path(wg)
+        =link_to 'Destroy', wg, :confirm => 'Are you sure?', :method => :delete

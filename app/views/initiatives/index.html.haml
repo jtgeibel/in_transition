@@ -1,20 +1,17 @@
-%h1 Listing initiatives
+%h1 Initiatives
+- content_for :sidebar do
+  = link_to 'New initiative', new_initiative_path if permitted_to? :create
 
-%table
-  %tr
-    %th Name
-    %th Location
-    %th
-    %th
-
-  - @initiatives.each do |initiative|
-    %tr
-      %td= link_to initiative.name, initiative
-      %td= initiative.location
-      %td= link_to 'Edit', edit_initiative_path(initiative)
-      %td= link_to 'Destroy', initiative, :confirm => 'Are you sure?', :method => :delete
-
-%br
-
-- permitted_to? :create do
-  = link_to 'New initiative', new_initiative_path
+- @initiatives.each do |initiative|
+  .box
+    %h2.title
+      = link_to initiative.name, initiative_url(initiative)
+    .location= initiative.location
+    - unless (work_groups = initiative.work_groups).empty?
+      Work groups:
+      - work_groups.each do |wg|
+        = link_to wg.name, work_group_path(wg)
+    - permitted_to? :create do
+      %p
+        =link_to 'Edit', edit_initiative_path(initiative)
+        =link_to 'Destroy', initiative, :confirm => 'Are you sure?', :method => :delete

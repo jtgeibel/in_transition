@@ -32,9 +32,7 @@ SimpleNavigation::Configuration.run do |navigation|
 
     # Add an item which has a sub navigation (same params, but with block)
     primary.item :initiatives, 'Initiatives', initiatives_url do |sub_nav|
-      sub_nav.item :featured1, 'featured_link_1', initiative_url('pittsburgh-garden-experiment')
-      sub_nav.item :featured2, 'featured_link_2', initiative_url('test2')
-      sub_nav.item :featured3, 'featured_link_3', initiative_url('test3')
+      sub_nav.item :featured1, 'The Pittsburgh Hub', initiative_url('the-hub')
     end 
     
     primary.item :focus_areas, 'Focus Areas', focus_areas_url do |sub_nav|
