@@ -8,7 +8,6 @@ InTransition::Application.configure do
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
-  config.active_support.deprecation        = :notify
 
   # Specifies the header that your server uses for sending files
   config.action_dispatch.x_sendfile_header = "X-Sendfile"
@@ -43,6 +42,13 @@ InTransition::Application.configure do
 
   Sass::Plugin.options[:template_location] = 'app/stylesheets'
   Sass::Plugin.options[:debug_info] = true
+
+  # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
+  # the I18n.default_locale when a translation can not be found)
+  config.i18n.fallbacks = true
+
+  # Send deprecation notices to registered listeners
+  config.active_support.deprecation = :notify
 
   config.action_mailer.default_url_options = { :host => 'warm-night-84.heroku.com' }
 end
