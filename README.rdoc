@@ -1,0 +1,52 @@
+== Welcome to in_transition
+
+in_transition is a custom web application built on the Ruby on Rails web framework.  This application serves as a testing ground for various concepts/plugins.  The long term focus of the application is to track Transition Initiatives in the Pittsburgh area.
+
+== Installation
+
+This is a rails 3 application and uses bundler to manage it's dependencies.  If necessary, install bundler via:
+
+  gem install bundler
+
+Then:
+
+  git clone git://github.com/jtgeibel/in_transition.git
+  cd in_transition
+  bundle install --without production
+
+== Plugins Used
+
+This application is comprised of many external plugins.  A high level overview of these plugins is provided here.
+
+=== Haml
+
+http://haml-lang.com
+
+HAML is used for the application's view templates.  HAML provides a structured way to interlace HTML and Ruby code.
+
+I also use a similar templating language for style sheets.
+Compass: http://compass-style.org/
+
+=== Devise
+
+http://github.com/plataformatec/devise
+
+Devise is an authorization framework and handles user registration, sign-in, passwords, and email confirmation.
+
+=== declarative_authorization
+
+http://github.com/stffn/declarative_authorization
+
+Provides role based authorization.  It uses an array of symbols (returned by the role_symbols method of the current user) and config/authorization_rules.rb to determine what actions a user (or guest) can take.
+
+=== friendly_id
+
+http://github.com/eric/friendly_id
+
+Handles permalinks and slugging.  Text based IDs should help us rank better with search engines.
+
+=== Other Plugins
+
+* inherited_resources: http://github.com/josevalim/inherited_resources
+* simple-navigation: http://github.com/andi/simple-navigation
+* simple_form: http://github.com/plataformatec/simple_form
