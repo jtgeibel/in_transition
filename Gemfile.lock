@@ -47,6 +47,7 @@ GEM
     babosa (0.2.0)
     bcrypt-ruby (2.1.2)
     builder (2.1.2)
+    bullet (2.0.0.rc1)
     compass (0.10.5)
       haml (>= 3.0.4)
     daemons (1.0.10)
@@ -115,6 +116,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bullet (~> 2.0.0.rc1)
   compass (>= 0.10.0)
   declarative_authorization!
   devise (~> 1.1.0)

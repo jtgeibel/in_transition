@@ -28,4 +28,5 @@ group :development do
   gem 'ruby_parser'
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'mongrel', '~>1.2.0.pre2'
+  gem 'bullet', '~>2.0.0.rc1'
 end
