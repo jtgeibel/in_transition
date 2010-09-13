@@ -3,4 +3,9 @@ class InitiativesController < InheritedResources::Base
   filter_resource_access
 
   navigation :initiatives
+  
+  def index
+    @initiatives = Initiative.includes(:work_groups)
+    respond_with(@initiatives)
+  end
 end
