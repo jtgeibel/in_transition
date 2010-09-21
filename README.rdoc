@@ -1,6 +1,7 @@
 = Welcome to in_transition
 
 in_transition is a custom web application built on the Ruby on Rails web framework.  This application serves as a testing ground for various concepts/plugins.  The long term focus of the application is to track Transition Initiatives in the Pittsburgh area.
+http://www.transitionnetwork.org/resources/transition-primer
 
 == Installation
 
