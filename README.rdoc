@@ -1,4 +1,4 @@
-== Welcome to in_transition
+= Welcome to in_transition
 
 in_transition is a custom web application built on the Ruby on Rails web framework.  This application serves as a testing ground for various concepts/plugins.  The long term focus of the application is to track Transition Initiatives in the Pittsburgh area.
 
@@ -13,6 +13,16 @@ Then:
   git clone git://github.com/jtgeibel/in_transition.git
   cd in_transition
   bundle install --without production
+
+== Intended Functionality
+
+* Wiki-style Blogging and Group Postings
+* Initiatives and Work Groups
+** Meeting Notes (open space)
+** News Stories
+** Events
+* Skills Swapping (#8. Facilitate the Great Reskilling)
+* Links to Local Resources
 
 == Plugins Used
 
