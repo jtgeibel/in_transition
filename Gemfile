@@ -9,11 +9,11 @@ group :production do
 end
 
 gem 'devise', '~>1.1.0'
-gem 'simple-navigation', '3.0.0.beta2'
+gem 'simple-navigation', '~>3.0.0'
 gem 'haml'
 gem 'compass', '>= 0.10.0'
 
-gem 'declarative_authorization', :git => 'git://github.com/stffn/declarative_authorization.git'
+gem 'declarative_authorization'
 
 gem 'inherited_resources'
 gem 'friendly_id'
