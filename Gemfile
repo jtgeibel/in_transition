@@ -18,10 +18,10 @@ gem 'declarative_authorization'
 gem 'inherited_resources'
 gem 'friendly_id'
 gem 'simple_form'
+gem 'jquery-rails'
 
 group :development do
   gem 'haml-rails'
-  # gem 'jquery-rails'
 end
 
 group :development do
